@@ -1,0 +1,9 @@
+<h1>Please enter the URL:</h1>
+<div>
+  <input type="url" [(ngModel)]="longURL"><br>
+  <button (click)="onClickMe()">Minify!</button>
+</div>
+<div *ngIf="shortURL">
+  <h1>ShortURL:</h1>
+  <div>{{currentURL}}{{shortURL}}</div>
+</div>
